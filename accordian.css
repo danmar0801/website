@@ -1,0 +1,28 @@
+.accordion{
+    max-width: 70vw !important;
+    margin: 50px;
+    box-shadow: 0 2px 25px 0 rgba(110, 130, 208, .18) !important;
+}
+
+.accordion-button{
+    background-color: #437e60 !important;
+    color: #fff !important;
+    position: relative;
+    box-shadow: none !important;
+}
+
+.accordion-button:active, .accordion-button:focus{
+    border: none !important;
+}
+
+.accordion-button:hover{
+    background: #25aca3 !important;
+}
+
+.accordion-button::after{
+    content: "";
+    background: #fff;
+    transform: scale(1.2);
+    border-radius: 3px;
+    transition: .5s !important;
+}

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+:root {
+    --Text: #121311;
+    --Background: #ffffff;
+    --Primary: #2F657F;
+    --Secondary: #FF8551;
+    --Accent: #99b4c1;
+}
+
+body {
+    background-color: var(--Background);;
+}
+a, p, li {
+    color: var(--Text);
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.color_effect_logo {
+    font-size: 40px;
+    font-weight: bold; /* Increase font weight for a thicker appearance */
+    background: linear-gradient(120deg, var(--Primary), var(--Accent));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.color-effect {
+    font-size: 40px;
+    font-weight: bold; /* Increase font weight for a thicker appearance */
+    background: linear-gradient(140deg, var(--Primary), var(--Accent));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: start;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.card-effect{
+    margin: 10px;
+    padding: 25px 10px;
+    border-radius: 15px;
+    background-color: rgba(206, 206, 206, 0.161);
+    height: 340px;
+}
+
+.bold-effect{
+    font-weight: bold;
+}
+
+#article-card {
+    width: 20rem;
+}
+
+#article-card img {
+    height: 40%;
+}
+
+.button-style{
+    width: 100%; 
+    font-size: 1.2rem; 
+    background-color: var(--Primary);
+    border: none;
+    color: white;
+
+
+
+
+}
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--Background);
+    border: none;
+    margin-right: 5px;
+}
+
+.social-btn:hover {
+    background-color: var(--Accent);
+    cursor: pointer;
+}
+
+.section-height {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.section-effect {
+    padding: 50px 0;
+    border-radius: 15px;
+
+}
+
+.section-effect li {
+    color: var(--Text);
+}
+

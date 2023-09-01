@@ -1,0 +1,92 @@
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.navbar-toggler {
+    width: 30px;
+    height: 10px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #d83434;
+    border-radius: 1;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+
+/*when navigation is clicked*/
+
+.navbar-toggler .top-bar {
+    margin-top: 0;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top: 0;
+    transform: rotate(-135deg);
+}
+
+
+/*state when the navbar is collapsed*/
+
+.navbar-toggler.collapsed .top-bar {
+    margin-top: -20px;
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=1);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    margin-top: 20px;
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .toggler-icon {
+    background: var(--Primary);
+}
+
+.nav-item {
+    padding: 0 5px;
+}
+
+@media screen and (max-width: 980px) {
+    .nav-item {
+        padding: 0px;
+    }
+}
